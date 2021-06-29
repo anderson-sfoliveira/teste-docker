@@ -1,0 +1,9 @@
+Comando para construir a imagem:
+docker build -t teste-docker .
+
+Comando para rodar o container da imagem:
+docker run -p 8080:8080 --name container-teste teste-docker
+
+URL:
+http://localhost:8080/ping
+
