@@ -116,14 +116,14 @@ spring.devtools.remote.secret=123 //esse número é uma senha qualquer
 
 * Tente modificar algo na sua aplicação que ative o hot reload e veja no navegador ou console o resultado
 
-### Notas
+##### Notas
 
-* O seu jar é jogado dentro do LXC do docker do java mas em nenhum momento recupero essa jar novamente, em outras palavras se eu fechar o container e abrir de novo ele será exatamente igual a como eu gerei o jar pela primeira vez.
+* O seu jar é jogado dentro do LXC (Linux Containers) do docker do java mas em nenhum momento recupero essa jar novamente, em outras palavras se eu fechar o container e abrir de novo ele será exatamente igual a como eu gerei o jar pela primeira vez.
 
-* Para contornar isso pare os containers gere novamente seu jar com ```./mvnw clean package -DskipTests``` assim terás a versão mais atualizada do seu jar na sua maquina e se quiser continuar a partir dai no container faça novamente:
-  * Gere a imagem com ```docker build -t [name-for-your-image] . ``` 
-  * Execute o ambiente com: ```docker run -p [your-port]:8080 [name-for-your-image]```
-
+* Para contornar isso pare os containers e faça novamente os passos abaixo:
+  * [Gere seu jar](#-importando-o-projeto)
+  * [Gere a imagem Docker](#-gerando-a-imagem-docker)
+  * [Execute o container da imagem Docker](#-executando-o-container-da-imagem-docker)
 
 ---
 
