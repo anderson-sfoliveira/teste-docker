@@ -120,7 +120,7 @@ spring.devtools.remote.secret=123 //esse número é uma senha qualquer
 
 * O seu jar é jogado dentro do LXC (Linux Containers) do docker do java mas em nenhum momento recupero essa jar novamente, em outras palavras se eu fechar o container e abrir de novo ele será exatamente igual a como eu gerei o jar pela primeira vez.
 
-* Para contornar isso pare os containers e faça novamente os passos abaixo:
+* Para contornar isso pare o container e faça novamente os passos abaixo:
   * [Gere seu jar](#-importando-o-projeto)
   * [Gere a imagem Docker](#-gerando-a-imagem-docker)
   * [Execute o container da imagem Docker](#-executando-o-container-da-imagem-docker)
