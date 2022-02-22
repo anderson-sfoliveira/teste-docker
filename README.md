@@ -16,6 +16,7 @@
   - [Importando o projeto](#-importando-o-projeto)
   - [Gerando a imagem Docker](#-gerando-a-imagem-docker)
   - [Executando o container da imagem Docker](#-executando-o-container-da-imagem-docker)
+  - [Configurando um hot reload](#-configurando-um-hot-reload)
 - [Tecnologias](#-tecnologias)
 - [Autor](#-autor)
 <!--te-->
@@ -76,6 +77,9 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 
 ```
 
+#### 🏃‍♂️ Configurando um hot reload
+
+asd
 
 
 ---
