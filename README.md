@@ -15,7 +15,7 @@
   - [Pré-requisitos](#pré-requisitos)
   - [Importando o projeto](#user-content--importando-o-projeto)
   - [Gerando a imagem Docker](#-gerando-a-imagem-docker)
-  - [Executando o container da imagem Docker](#-executando-o-container-da-imagem-docker)
+  - [Executando o container da imagem Docker](#user-content--executando-o-container-da-imagem-docker)
 - [Tecnologias](#-tecnologias)
 - [Autor](#-autor)
 <!--te-->
@@ -46,7 +46,6 @@ $ git clone https://github.com/anderson-sfoliveira/teste-docker.git
 # Solicite um "Update Maven Project" (Alt + F5)
 
 # Execute o "Maven Build" para gerar o arquivo jar do projeto.
-
 
 ```
 
