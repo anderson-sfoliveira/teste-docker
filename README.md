@@ -43,9 +43,7 @@ $ git clone https://github.com/anderson-sfoliveira/teste-docker.git
 
 # Solicite um "Update Maven Project" (Alt + F5)
 
-# Inicie a aplicação para gerar o jar.
-
-# Pare a execução do projeto.
+# Execute o "Maven Build" para gerar o arquivo jar do projeto.
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd teste-docker
@@ -59,7 +57,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 # O container iniciará na porta:8080 - acesse http://localhost:8080/ping
 
 ```
-
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/VY2jkpJ/gerando-jar.png" alt="gerando-jar" border="0"></a><br />
 ---
 
 ## 🛠 Tecnologias
