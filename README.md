@@ -77,7 +77,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 
 ```
 
-#### 🏃 Configurando um hot reload
+#### ⚙️ Configurando um hot reload
 
 asd
 
