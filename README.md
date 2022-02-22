@@ -43,7 +43,7 @@ $ git clone https://github.com/anderson-sfoliveira/teste-docker.git
 
 # Solicite um "Update Maven Project" (Alt + F5)
 
-# Inicie a aplicação.
+# Inicie a aplicação para gerar o jar.
 
 # Pare a execução do projeto.
 
