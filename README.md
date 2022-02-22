@@ -67,7 +67,6 @@ $ docker build -t teste-docker .
 ```
 
 #### 🏃 Executando o container da imagem Docker
-#### 🔨 Executando o container da imagem Docker
 
 ```bash
 
