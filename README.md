@@ -14,6 +14,7 @@
 - [Como executar o projeto](#-como-executar-o-projeto)
   - [Pré-requisitos](#pré-requisitos)
   - [Rodando o projeto](#user-content--rodando-o-projeto)
+  - [Gerando o jar](#-gerando-o-jar)
 - [Tecnologias](#-tecnologias)
 - [Autor](#-autor)
 <!--te-->
@@ -57,6 +58,8 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 # O container iniciará na porta:8080 - acesse http://localhost:8080/ping
 
 ```
+
+#### 🔨 Gerando o jar
 
 <a>
   <img src="https://i.ibb.co/VY2jkpJ/gerando-jar.png" alt="gerando-jar" border="0">
