@@ -13,8 +13,9 @@
 - [Sobre o projeto](#-sobre-o-projeto)
 - [Como executar o projeto](#-como-executar-o-projeto)
   - [Pré-requisitos](#pré-requisitos)
-  - [Rodando o projeto](#user-content--rodando-o-projeto)
-  - [Gerando o jar](#-gerando-o-jar)
+  - [Importando o projeto](#user-content--importando-o-projeto)
+  - [Gerando a imagem Docker](#-gerando-a-imagem-docker)
+  - [Executando o container da imagem Docker](#-executando-o-container-da-imagem-docker)
 - [Tecnologias](#-tecnologias)
 - [Autor](#-autor)
 <!--te-->
@@ -33,7 +34,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina a ferramenta
 [Maven](https://maven.apache.org/) e [Docker](https://www.docker.com/).
 Além disto é bom ter um editor para trabalhar com o código como [Spring Tools 4 for Eclipse](https://spring.io/tools/).
 
-#### 🎲 Rodando o projeto
+#### 🎲 Importando o projeto
 
 ```bash
 
@@ -46,11 +47,28 @@ $ git clone https://github.com/anderson-sfoliveira/teste-docker.git
 
 # Execute o "Maven Build" para gerar o arquivo jar do projeto.
 
+
+```
+
+<a>
+  <img src="https://i.ibb.co/VY2jkpJ/gerando-jar.png" alt="gerando-jar" border="0">
+</a>
+
+#### 🔨 Gerando a imagem Docker
+
+```bash
+
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd teste-docker
 
 # Execute o comando para construir a imagem Docker do projeto
 $ docker build -t teste-docker .
+
+```
+
+#### 🏃‍♂️ Executando o container da imagem Docker
+
+```bash
 
 # Execute o comando para rodar o container da imagem
 $ docker run -p 8080:8080 --name container-teste teste-docker
@@ -59,11 +77,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 
 ```
 
-#### 🔨 Gerando o jar
 
-<a>
-  <img src="https://i.ibb.co/VY2jkpJ/gerando-jar.png" alt="gerando-jar" border="0">
-</a>
 
 ---
 
