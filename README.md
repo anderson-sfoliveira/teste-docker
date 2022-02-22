@@ -81,8 +81,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 
 ##### Instruções
 
-*  Configure o pom.xml para ter o devtools no momento de build da aplicação também:
-
+*  O pom.xml foi configurado para ter o devtools no momento de build da aplicação também:
 
 ```
 	<build>
@@ -98,7 +97,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 	</build>
 ```
 
-*  Coloque essa configuração no application.properties:
+*  Essa configuração foi colocada no arquivo de propriedades application.properties:
 
 ```
 spring.devtools.remote.secret=123 //esse número é uma senha qualquer
@@ -106,14 +105,15 @@ spring.devtools.remote.secret=123 //esse número é uma senha qualquer
 
 * Em ```Run Configurations -> Java Application -> New Configuration``` faça:
 
-  * Em Project deixe seu projeto atual
+  * Em Project coloque o nome do seu projeto
   * Em Main Class coloque: ```org.springframework.boot.devtools.RemoteSpringApplication```
   * Na aba arguments coloque ```http://localhost:8080```
-  * Der um nome para a configuração, no meu caso coloquei Remote e clique em close
-  * Adicione essa configuração na aba Common para ela aparecer no seu menu
+  * Dê um nome para a configuração (sugestão: Remote)
+  * Na aba Common adicione essa configuração para ela aparecer no seu menu
   * Após esses passos ele vai tentar executar sua aplicação no endereço passado, com aquela porta ativa que no caso será configurada com o docker
 
-*  Vá em ```Run Configurations -> Java Application -> [Your-configuration-name]``` e clique em run
+* Vá em ```Run Configurations -> Java Application -> [nome-da-configuração]``` e clique em run
+
 * Tente modificar algo na sua aplicação que ative o hot reload e veja no navegador ou console o resultado
 
 ### Notas
