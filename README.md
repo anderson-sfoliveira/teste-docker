@@ -79,9 +79,7 @@ $ docker run -p 8080:8080 --name container-teste teste-docker
 
 #### 🏃 Configurando um hot reload
 
-Essa aplicação executa um hot reload na aplicação gerada pelo docker atualizando as informações do pacote final já no jar de produção.
-
-### Instruções
+##### Instruções
 
 *  Configure o pom.xml para ter o devtools no momento de build da aplicação também:
 
