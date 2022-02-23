@@ -1,0 +1,22 @@
+#FROM openjdk
+
+#WORKDIR /app
+
+#COPY target/teste-docker-1.0.0-SNAPSHOT.jar /app/teste-docker.jar
+
+#ENTRYPOINT ["java", "-jar", "teste-docker.jar"]
+
+#-----------------------------------------------------------------
+#FROM openjdk:11.0.11-jre-slim          fazer o teste com essa imagem novamente para ver se funciona
+FROM adoptopenjdk/openjdk11:alpine
+
+WORKDIR /app
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:go-offline
+
+COPY src ./src
+
+#CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.profiles=mysql,oauth-security"]
+CMD ["./mvnw", "spring-boot:run"]
